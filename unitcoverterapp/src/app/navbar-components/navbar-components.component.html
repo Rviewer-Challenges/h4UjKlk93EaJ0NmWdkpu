@@ -1,0 +1,17 @@
+<div class="mt-3 ">
+  <h4 class="heading text-center" >Select unit conversion</h4>
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <form (ngSubmit)="unitSearch()">
+        <div class="form-group">
+          <select name="unit"  class="form-control form-control-mg">
+            <option [value]="unit.value"*ngFor="let unit of unit">
+              {{ unit.name }}
+            </option>
+          </select>
+          <button type="submit" class="btn btn-outline-secondary btn-block btn-mg">Search</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
